@@ -43,8 +43,8 @@ now send the payload:
 > {"action":"add", "data": "test"}
 ```
 
-```javascript
 you should see as response:
+```javascript
 < Hello test
 ```
 
