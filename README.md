@@ -1,6 +1,6 @@
 # WebSocket APIs in Amazon API Gateway #
 
-I was interested to build a real time api, last time that I did was years ago in .NET with SignalR.
+I was interested to build a real-time api, last time that I did was years ago in .NET with SignalR.
 AWS announced back in 2018 [websocket api](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/) so was time to build a POC just to have fun
 
 ### Architecture ###
@@ -12,11 +12,11 @@ We have three lambdas essentially
 * onDisconnect
 * the action one
 
-In this example I called "add"
+In this example, I called "add"
 
 ![picture](https://bitbucket.org/DanBranch/api-gateway-websocket/downloads/api.png)
 
-Each route must be associate to a lambda. The $defeault route should be used as catch all if the $request.body.action does not match the route. 
+Each route must be associate with a lambda. The $defeault route should be used as a catch-all if the $request.body.action does not match the route. 
 
 ### How do I get set up? ###
 
@@ -28,7 +28,7 @@ Each route must be associate to a lambda. The $defeault route should be used as 
 
 ### Test time ###
 
-From command line, run the command
+From the command line, run the command
 ```javascript
 wscat -c Your_WebSocket_URL
 ```
@@ -43,8 +43,9 @@ now send the payload:
 > {"action":"add", "data": "test"}
 ```
 
-you should see as response:
+you should see a response:
 ```javascript
 < Hello test
 ```
+
 
