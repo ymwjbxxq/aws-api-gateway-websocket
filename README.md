@@ -1,18 +1,18 @@
 # WebSocket APIs in Amazon API Gateway #
 
-I was interested to build a real-time api, last time that I did was years ago in .NET with SignalR.
-AWS announced back in 2018 [websocket api](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/) so was time to build a POC just to have fun
+I was interested in building a real-time API, last time that I did was years ago in .NET with SignalR.
+AWS announced back in 2018 [websocket api](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/), so it was time to build a POC just to have fun
 
 ### Architecture ###
 
 ![picture](https://bitbucket.org/DanBranch/api-gateway-websocket/downloads/websockets-arch.png)
 
-We have three lambdas essentially
+We have three lambdas, essentially
 * onConnect
 * onDisconnect
 * the action one
 
-In this example, I called "add"
+In this example, I called "add".
 
 ![picture](https://bitbucket.org/DanBranch/api-gateway-websocket/downloads/api.png)
 
@@ -47,5 +47,3 @@ you should see a response:
 ```javascript
 < Hello test
 ```
-
-
