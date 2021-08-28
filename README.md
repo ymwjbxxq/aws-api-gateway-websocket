@@ -5,7 +5,7 @@ AWS announced back in 2018 [websocket api](https://aws.amazon.com/blogs/compute/
 
 ### Architecture ###
 
-![picture](https://bitbucket.org/DanBranch/api-gateway-websocket/downloads/websockets-arch.png)
+![picture](https://github.com/ymwjbxxq/aws-api-gateway-websocket/blob/master/websockets-arch.png)
 
 We have three lambdas, essentially
 * onConnect
@@ -14,7 +14,7 @@ We have three lambdas, essentially
 
 In this example, I called "add".
 
-![picture](https://bitbucket.org/DanBranch/api-gateway-websocket/downloads/api.png)
+![picture](https://github.com/ymwjbxxq/aws-api-gateway-websocket/blob/master/api.png)
 
 Each route must be associate with a lambda. The $defeault route should be used as a catch-all if the $request.body.action does not match the route. 
 
