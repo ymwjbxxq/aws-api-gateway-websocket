@@ -1,7 +1,7 @@
 # WebSocket APIs in Amazon API Gateway #
 
-I was interested in building a real-time API, last time that I did was years ago in .NET with SignalR.
-AWS announced back in 2018 [websocket api](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/), so it was time to build a POC just to have fun
+I was interested in building a real-time API, last time I did was years ago in .NET with SignalR.
+AWS announced back in 2018 [websocket api](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/), so it was time to build a POC to have fun
 
 ### Architecture ###
 
@@ -16,7 +16,7 @@ In this example, I called "add".
 
 ![picture](https://github.com/ymwjbxxq/aws-api-gateway-websocket/blob/master/api.png)
 
-Each route must be associate with a lambda. The $defeault route should be used as a catch-all if the $request.body.action does not match the route. 
+Each route must be associated with a lambda. For example, the $defeault route should be used as a catch-all if the $request.body.action does not match the route. 
 
 ### How do I get set up? ###
 
